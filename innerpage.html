@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/innerPage.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main d-inline-flex g-0">
+        <nav class="navbar-expand-lg">
+            
+            <div class="nav flex-column sidebar">              
+                <div class="nav-item p-lg-4 p-2 pt-3 m-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="images/menu-bar.svg" alt="">
+                    </button>
+                </div>
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3 nav-tabs">
+                    <a class="" href="dashboard.html">
+                        <button class="d-flex side-text">
+                           <img src="images/dashboard-default.svg" alt="">
+                           <label class="collapse navbar-collapse" id="navbarSupportedContent"> Dashboard</label>
+                        </button>
+                    </a>
+                </div>
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3 sideActive">
+                    <a class="" href="innerpage.html">
+                        <button class="d-flex sideActive">
+                            <img src="images/graph-default.svg" alt="">
+                            <span class="collapse navbar-collapse" id="navbarSupportedContent">Analysis</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                    <a class="" href="#">
+                        <button class="d-flex side-text">
+                            <img src="images/inbox-default.svg" alt="">
+                            <span class="collapse navbar-collapse" id="navbarSupportedContent">Inbox</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                    <a class="side-text sideActive" href="#">
+                        <button class="d-flex side-text">
+                            <img src="images/clock-default.svg" alt="">
+                            <span class="collapse navbar-collapse" id="navbarSupportedContent">History</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                    <a class="side-text sideActive" href="#">
+                        <button class="d-flex side-text">
+                            <img src="images/user-default.svg" alt="">
+                            <span class="collapse navbar-collapse" id="navbarSupportedContent">Users</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                    <a class="side-text sideActive" href="#">
+                        <button class="d-flex side-text">
+                            <img src="images/maintenance-default.svg" alt="">
+                            <span class="collapse navbar-collapse" id="navbarSupportedContent">Maintainance</span>
+                        </button>
+                    </a>
+                </div>  
+                <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                    <a class="side-text" href="#">
+                        <button class="d-flex side-text">
+                            <img src="images/setting-default.svg" alt="">
+                            <span class="collapse navbar-collapse" id="navbarSupportedContent">Setting</span>
+                        </button>
+                    </a>
+                </div>                
+            </div>
+        </nav>
+
+        <div class="content">
+            <header class="header navbar navbar-expand">
+                <ul class="navbar-nav align-items-center me-auto ps-md-4">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="images/menu-bar.svg" alt="">
+                    </button>
+                    <li class="navbar-brand"><a class="nav-link me-md-5" href="#"><img src="images/header-logo.svg" alt="logo"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img class="searchImg" src="images/search-icon.svg" alt="search-icon"></a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></a></li>
+                </ul>
+                <ul class="navbar-nav align-items-center" >
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="images/notification-icon.svg" alt="notification-icon"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="images/profile.png" alt="Profile Image"></a></li>
+                    <li class="nav-item dropdown me-md-5 m-0 johndoe">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          John Doe
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+              </header>
+
+            <h2 class="pt-5 ps-5">Analysis</h2>
+            <div class="form-all m-5">
+                <form action="#" class="oneColumn">
+                    <label for="" class="formHeading">One Column</label>
+                    <input type="text" class="nameOne" name="nameOne" id="nameOne" placeholder="Name">
+                    <select name="dropdownOne" id="dropdownOne">
+                        <option value="" disabled selected hidden>Dropdown</option>
+                        <option value="Option 1">Option 1</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 2</option>
+                    </select>
+                    <br><br>
+                    <textarea name="textareaOne" id="textareaOne" cols="30" rows="10" placeholder="Multiple Line"></textarea>
+                </form>
+                <br>
+
+                <form action="#">
+                        <label for="" class="formHeading">Two Column</label>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="nameTwo" name="nameTwo" id="nameTwo" placeholder="Name">
+                            <br>
+                            <input type="password" class="passwordTwo" name="passwordTwo" id="passwordTwo" placeholder="Password">
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="userNameTwo" name="userNameTwo" id="userNameTwo" value="johndoe">
+                            <label for="userNameTwo" class="userNameTwoLabel">User Name</label>
+                            <br>
+                            <select name="dropdown" id="dropdown" placeholder="dropdown">
+                                <option value="" disabled selected hidden>Dropdown</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <br>
+
+                <form action="#">
+                    <label for="" class="formHeading">Three Column</label>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <input type="text" class="focusThree" name="focusThree" id="focusThree" placeholder="focus">
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <input type="password" class="passwordThree" name="passwordThree" id="passwordThree" value="12345678">
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <input type="text" class="userNameThree" name="userNameThree" id="userNameThree" placeholder="John Doe" disabled>
+                        </div>
+                    </div>
+                </form>
+                <br>
+
+                <form action="#">
+                    <label for="" class="formHeading">Four Column</label>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <input type="text" class="designationFour" name="designationFour" id="designationFour" placeholder="designation">
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <input type="text" class="nameFour" name="nameFour" id="nameFour" placeholder="Name">
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <input type="text" class="userNameFour" name="userNameFour" id="userNameFour" value="johndoe">
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <select name="dropdown" id="dropdown" placeholder="dropdown">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                <form action="">
+                    <label for="" class="formHeading">Other Design Elements</label>
+                    <br><br>
+                    <span class="head2">File Upload</span>
+                    <br>
+                    <input class="uploadButton" type="file" id="">
+
+                    <br><br>
+                    <span class="head2">Radio Button</span>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Option 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">option 2</label>
+                      </div>
+                    <br><br>
+                    <span class="head2">Checkbox</span><br>
+                    <div class="form-check form-check-inline">
+                        <input class="" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
+                      </div>
+                </form>
+                <br>
+
+                <span class="head2">Snackbar</span><br>
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="snackBar1 m-2 text-danger">
+                        <img class="snacks" src="images/error-icon.svg" alt=""> This is error message
+                    </div>
+                    <div class="snackBar2 m-2 text-info">
+                        <img class="snacks" src="images/info-icon.svg" alt=""> This is information message
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="snackBar3 m-2 text-warning">
+                        <img class="snacks" src="images/warning-icon.svg" alt=""> This is Warning message
+                    </div>
+                    <div class="snackBar4 m-2 text-success">
+                        <img class="snacks" src="images/success-icon.svg" alt=""> This is success message
+                    </div>
+                </div>
+                <br>
+                <span class="head2">Class to action</span><br>
+                <button class="customButton">Primary</button>
+                <button class="customButton">Secondary</button>
+
+                <br><br>
+                <span class="head2">Tabs</span><br><br>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active text-danger" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link text-danger" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link text-danger" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
+   

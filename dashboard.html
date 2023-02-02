@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboardStyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="main d-flex">
+    <nav class="navbar-expand-lg">
+        <div class="nav flex-column sidebar">              
+            <div class="p-lg-4 p-2 pt-3 m-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="images/menu-bar.svg" alt="">
+                </button>
+            </div>
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3 nav-tabs sideActive">
+                <a class="" href="dashboard.html">
+                    <button class="d-flex sideActive side-text">
+                      <img src="images/dashboard-default.svg" alt="">
+                      <label class="collapse navbar-collapse" id="navbarSupportedContent"> Dashboard</label>
+                    </button>
+                </a>
+            </div>
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3 side-text">
+                <a class="" href="innerpage.html">
+                    <button class="d-flex side-text">
+                        <img src="images/graph-default.svg" alt="">
+                        <span class="collapse navbar-collapse" id="navbarSupportedContent">Analysis</span>
+                    </button>
+                </a>
+            </div>
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                <a class="" href="#">
+                    <button class="d-flex side-text">
+                        <img src="images/inbox-default.svg" alt="">
+                        <span class="collapse navbar-collapse" id="navbarSupportedContent">Inbox</span>
+                    </button>
+                </a>
+            </div>
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                <a class="side-text sideActive" href="#">
+                    <button class="d-flex side-text">
+                        <img src="images/clock-default.svg" alt="">
+                        <span class="collapse navbar-collapse" id="navbarSupportedContent">History</span>
+                    </button>
+                </a>
+            </div>
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                <a class="side-text sideActive" href="#">
+                    <button class="d-flex side-text">
+                        <img src="images/user-default.svg" alt="">
+                        <span class="collapse navbar-collapse" id="navbarSupportedContent">Users</span>
+                    </button>
+                </a>
+            </div>
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                <a class="side-text sideActive" href="#">
+                    <button class="d-flex side-text">
+                        <img src="images/maintenance-default.svg" alt="">
+                        <span class="collapse navbar-collapse" id="navbarSupportedContent">Maintainance</span>
+                    </button>
+                </a>
+            </div>  
+            <div class="nav-item px-lg-4 mt-2 pt-1 px-3">
+                <a class="side-text" href="#">
+                    <button class="d-flex side-text">
+                        <img src="images/setting-default.svg" alt="">
+                        <span class="collapse navbar-collapse" id="navbarSupportedContent">Setting</span>
+                    </button>
+                </a>
+            </div>                
+        </div>
+    </nav>
+    <div class="rightDiv">
+      <header class="header navbar navbar-expand">
+        <ul class="navbar-nav align-items-center me-auto ps-md-4">
+            <li class="navbar-brand"><a class="nav-link me-md-5" href="#"><img src="images/header-logo.svg" alt="logo"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img class="searchImg" src="images/search-icon.svg" alt="search-icon"></a></li>
+            <li class="nav-item"> <a class="nav-link" href="#"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></a></li>
+        </ul>
+        <ul class="navbar-nav align-items-center" >
+            <li class="nav-item"><a class="nav-link" href="#"><img src="images/notification-icon.svg" alt="notification-icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="images/profile.png" alt="Profile Image"></a></li>
+            <li class="nav-item dropdown me-md-5 m-0 johndoe">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  John Doe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+      </header>
+      <div class="content">
+          <h2>Dashboard</h2>
+          <br>
+          <div class="boxes d-flex flex-column flex-wrap flex-sm-row justify-content-around">
+            <div class="m-3 row align-items-center ">
+              <div class="col-4"><img src="images/star.svg" alt=""> </div>
+              <div class="col-8"><span class="fontBox">23,456</span><br><span class="fontBoxSmall">New Products</span></div>
+            </div>
+            <div class="m-3 row align-items-center">
+              <div class="col-4"><img src="images/new-product.svg" alt=""> </div>
+              <div class="col-8"><span class="fontBox">2345</span><br><span class="fontBoxSmall">Added Products</span></div>
+            </div>
+            <div class="m-3 row align-items-center">
+              <div class="col-4"><img src="images/total-product.svg" alt=""> </div>
+              <div class="col-8"><span class="fontBox">32,456</span><br><span class="fontBoxSmall">Total Products</span></div>
+            </div>
+            <div class="m-3 row align-items-center">
+              <div class="col-4"><img src="images/dollar-filled.svg" alt=""> </div>
+              <div class="col-8"><span class="fontBox">5678</span><br><span class="fontBoxSmall">Today's Sale</span></div>
+            </div>
+            <div class="m-3 row align-items-center">
+              <div class="col-4"><img src="images/money-bag.svg" alt=""> </div>
+              <div class="col-8"><span class="fontBox">33,5342</span><br><span class="fontBoxSmall">Total Sales</span></div>
+            </div>
+          </div>
+          <br>
+
+          <div class="d-flex flex-column flex-md-row justify-content-around">
+            <div class="">
+                <img class="img1" src="images/data-graph.png" alt="">
+            </div>
+            <div class="">
+                <img class="img2" src="images/pie-chart.png" alt="">
+            </div>
+          </div>
+          <br><br>
+          <div class="table-responsive">
+            <div class="d-flex p-3 table-all justify-content-between">
+              <div class="invoices">Invoices</div>
+              <div class="viewAll">View ALL</div>
+            </div>
+            <table class="table table-all">
+              <th>
+                <td class="greyText">INVOICE</td>
+                <td class="greyText">COMPANY NAME</td>
+                <td class="greyText">EMAIL</td>
+                <td class="greyText">DUE DATE</td>
+                <td class="greyText">STATUS</td>
+                <td class="greyText">AMOUNT</td>
+              </th>
+              <tr>
+                <td></td>
+                <td>651535</td>
+                <td>Public Adjusting Firm</td>
+                <td>georgia.young@example.com</td>
+                <td>24 May, 2020</td>
+                <td class="text-success">Paid</td>
+                <td>$47,800</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>558612</td>
+                <td>Other</td>
+                <td>jessica.hanson@example.com</td>
+                <td>24 May, 2020</td>
+                <td class="text-success">Paid</td>
+                <td>$98,000</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>558612</td>
+                <td>Other</td>
+                <td>jessica.hanson@example.com</td>
+                <td>24 May, 2020</td>
+                <td class="text-success">Paid</td>
+                <td>$98,000</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>558612</td>
+                <td>Vendor</td>
+                <td>alma.lawson@example.com</td>
+                <td>8 Sep, 2020</td>
+                <td class="text-success">Paid</td>
+                <td>$20,900</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>651535</td>
+                <td>Subcontractor Company</td>
+                <td>jackson.graham@example.com</td>
+                <td>1 Feb, 2020</td>
+                <td class="text-danger">Failed</td>
+                <td>$10,200</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>653518</td>
+                <td>Mortgage Company</td>
+                <td>felicia.reid@example.com</td>
+                <td>22 Oct, 2020</td>
+                <td class="text-muted">Pending</td>
+                <td>$12,600</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>487441</td>
+                <td>TPA</td>
+                <td>dolores.chambers@example.com</td>
+                <td>21 Sep, 2020</td>
+                <td class="text-success">Paid</td>
+                <td>$11,170</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>267400</td>
+                <td>Fire Department</td>
+                <td>nevaeh.simmons@example.com</td>
+                <td>17 Oct, 2020</td>
+                <td class="text-danger">Failed</td>
+                <td>$28,000</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>449003</td>
+                <td>Insurance Carrier</td>
+                <td>curtis.weaver@example.com</td>
+                <td>21 Sep, 2020</td>
+                <td class="text-success">Paid</td>
+                <td>$10,000</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
+   
